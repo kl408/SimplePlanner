@@ -8,7 +8,7 @@
 
 ## Overview
 ### Description
-Simple Planner is a planner app that manages your to tasks. It is paired with a weather function so users can plan their days accordingly.
+Simple Planner is a planner app that manages your tasks. It is paired with a weather function so users can plan their days accordingly.
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
