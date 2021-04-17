@@ -71,12 +71,11 @@ Optional:
 * Settings -> Configure settings
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
-
-### [BONUS] Digital Wireframes & Mockups
+### Digital Wireframes & Mockups
+<img src="https://i.imgur.com/QY703Ko.png" width=600>
 
 ### [BONUS] Interactive Prototype
+Will be updated in the next few days!
 
 ## Schema 
 [This section will be completed in Unit 9]
