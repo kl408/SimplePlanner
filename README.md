@@ -85,8 +85,8 @@ Optional:
 | Property | Type     |Description|
 | -------- | -------- | -------- |
 | userId   | String | unique id for the user|
-| TaskId   | String | unique id for each task|
-| DateLabel| String | Day of tasks|
+| Task   | String | taks posted by user|
+| DateLabel| String | Day of task|
 | TimeLabel| String | Due Date of each task|
 | LocationId| String | Weather location|
 | WeatherInfo| String |Weather Information e.g. sunny|
