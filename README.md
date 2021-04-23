@@ -1,3 +1,6 @@
+Original App Design Project - README Template
+===
+
 # SimplePlanner
 
 ## Table of Contents
@@ -8,7 +11,7 @@
 
 ## Overview
 ### Description
-Simple Planner is a planner app that manages your tasks. It is paired with a weather function so users can plan their days accordingly.
+Simple Planner is a planner app that manages your to tasks. It is paired with a weather function so users can plan their days accordingly.
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
@@ -71,17 +74,45 @@ Optional:
 * Settings -> Configure settings
 
 ## Wireframes
-### Digital Wireframes & Mockups
-<img src="https://i.imgur.com/QY703Ko.png" width=600>
+![](https://i.imgur.com/QY703Ko.png)
+
+### [BONUS] Digital Wireframes & Mockups
 
 ### [BONUS] Interactive Prototype
-Will be updated in the next few days!
 
 ## Schema 
-[This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+| Property | Type     |Description|
+| -------- | -------- | -------- |
+| userId   | String | unique id for the user|
+| TaskId   | String | unique id for each task|
+| DateLabel| String | Day of tasks|
+| TimeLabel| String | Due Date of each task|
+| LocationId| String | Weather location|
+| WeatherInfo| String |Weather Information e.g. sunny|
+| Temperature| Number | Current Temperature|
+| CurrentTime| String | Current Time|
+| PredictedWeather| String | Weather in the next few hours|
+| PredictedTemperature| Number | Temperature in the next few hours|
+| FutureTime| String | Next few hours after current time|
+
+
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+- Home Feed Screen
+    - (Read/GET) Query weather information
+    - (Read/GET) Query all tasks information
+    - (Delete) Delete a task
+- Create Post Screen
+    - (Create/POST) Create a new task object
+- Setting Screen
+    - (Update/PUT) Update user profile settings
+
+#### [OPTIONAL:] Existing API Endpoints
+- Base URL: http://api.weatherapi.com/v1
+
+
+| HTTP Verb | Endpoint | Description |
+| --------  | -------- | -------- |
+| GET      |/current.json or /current.xml| get Current Weather     |
+| GET      |/forecast.json or /forecast.xml| get Forecast  |
+| GET      |/timezone.json or /timezone.xml| get Timezone  |
