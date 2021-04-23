@@ -100,6 +100,21 @@ Optional:
 ### Networking
 - Home Feed Screen
     - (Read/GET) Query weather information
+    ```swift
+    // iOS
+    // (Read/GET) Query all tasks where user is author
+    let query = PFQuery(className:"Task")
+    query.whereKey("author", equalTo: currentUser)
+    query.order(byDescending: "DueDate")
+    query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+       if let error = error {
+          print(error.localizedDescription)
+       } else if let posts = posts {
+          print("Successfully retrieved \(posts.count) posts.")
+          // TODO: Do something with posts...
+       }
+    }
+    ```
     - (Read/GET) Query all tasks information
     - (Delete) Delete a task
 - Create Post Screen
