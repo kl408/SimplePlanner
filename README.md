@@ -8,6 +8,7 @@ Original App Design Project - README Template
 1. [Product Spec](#Product-Spec)
 1. [Wireframes](#Wireframes)
 2. [Schema](#Schema)
+3.[Build Progress](##Build-Progress)
 
 ## Overview
 ### Description
@@ -28,19 +29,19 @@ Simple Planner is a planner app that manages your to tasks. It is paired with a 
 
 **Required Must-have Stories**
 
-* User logs in to access their planner.
-* User creates tasks.
-* User can view weather.
-* User can view tasks.
-* User can use a pomodoro.
-* User can change settings.
+- [x] User logs in to access their planner.
+-[] User creates tasks.
+-[] User can view weather.
+-[] User can view tasks.
+-[] User can use a pomodoro.
+-[] User can change settings.
 
 **Optional Nice-to-have Stories**
 
-* User can color code their to-dos based on importance.
-* User can change between dark mode and light mode.
-* User can change their location and view the weather there.
-* User can be alerted of weather events, especially if they may interfere with the user's plans.
+-[] User can color code their to-dos based on importance.
+-[] User can change between dark mode and light mode.
+-[] User can change their location and view the weather there.
+-[] User can be alerted of weather events, especially if they may interfere with the user's plans.
 
 ### 2. Screen Archetypes
 
@@ -131,4 +132,8 @@ Optional:
 | GET      |/current.json or /current.xml| get Current Weather     |
 | GET      |/forecast.json or /forecast.xml| get Forecast  |
 | GET      |/timezone.json or /timezone.xml| get Timezone  |
+
+## Build Progress
+Log in and Sign Up Gif
+![](https://i.imgur.com/UQjGM62.gif)
 
