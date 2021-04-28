@@ -1,0 +1,6 @@
+framework module Pods_SimplePlanner_SimplePlannerUITests {
+  umbrella header "Pods-SimplePlanner-SimplePlannerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
