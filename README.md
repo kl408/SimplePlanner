@@ -135,5 +135,6 @@ Optional:
 
 ## Build Progress
 Log in and Sign Up Gif
+
 ![](https://i.imgur.com/UQjGM62.gif)
 
