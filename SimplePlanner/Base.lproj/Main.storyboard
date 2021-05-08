@@ -117,6 +117,7 @@
                                                 <constraint firstItem="Tzk-Bv-hZZ" firstAttribute="leading" secondItem="NVs-8a-iIw" secondAttribute="leadingMargin" constant="5" id="ydk-0w-s4o"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <gestureRecognizers/>
                                         <connections>
                                             <outlet property="dateLabel" destination="fUU-Fg-2Dp" id="Ajm-ro-YjO"/>
                                             <outlet property="taskLabel" destination="Tzk-Bv-hZZ" id="U70-Va-b5C"/>
