@@ -30,18 +30,18 @@ Simple Planner is a planner app that manages your to tasks. It is paired with a 
 **Required Must-have Stories**
 
 - [x] User logs in to access their planner.
--[] User creates tasks.
--[] User can view weather.
--[] User can view tasks.
--[] User can use a pomodoro.
--[] User can change settings.
+- [ ] User creates tasks.
+- [ ] User can view weather.
+- [ ] User can view tasks.
+- [ ] User can use a pomodoro.
+- [ ] User can change settings.
 
 **Optional Nice-to-have Stories**
 
--[] User can color code their to-dos based on importance.
--[] User can change between dark mode and light mode.
--[] User can change their location and view the weather there.
--[] User can be alerted of weather events, especially if they may interfere with the user's plans.
+- [ ] User can color code their to-dos based on importance.
+- [ ] User can change between dark mode and light mode.
+- [ ] User can change their location and view the weather there.
+- [ ] User can be alerted of weather events, especially if they may interfere with the user's plans.
 
 ### 2. Screen Archetypes
 
