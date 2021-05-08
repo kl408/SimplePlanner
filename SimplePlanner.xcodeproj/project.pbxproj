@@ -16,6 +16,8 @@
 		261AE63F263A0F1E00D73C07 /* SimplePlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261AE63E263A0F1E00D73C07 /* SimplePlannerUITests.swift */; };
 		261AE661263A1A6A00D73C07 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261AE660263A1A6A00D73C07 /* LoginViewController.swift */; };
 		261AE666263A1A7900D73C07 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261AE665263A1A7900D73C07 /* FeedViewController.swift */; };
+		264CCBA52646318200DA11F5 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264CCBA42646318200DA11F5 /* TasksViewController.swift */; };
+		264CCBAA2646347600DA11F5 /* TasksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264CCBA92646347600DA11F5 /* TasksCell.swift */; };
 		3AF2FB69253C8095A5C7F528 /* Pods_SimplePlanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D906027925558BB550070E20 /* Pods_SimplePlanner.framework */; };
 		5721A80511557B35582A039F /* Pods_SimplePlannerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E7E8E2E31105007445ACF15 /* Pods_SimplePlannerTests.framework */; };
 		AEF899C73449A554E3D4166D /* Pods_SimplePlanner_SimplePlannerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1145C62AABF82BADE4FE668D /* Pods_SimplePlanner_SimplePlannerUITests.framework */; };
@@ -57,6 +59,8 @@
 		261AE640263A0F1E00D73C07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		261AE660263A1A6A00D73C07 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		261AE665263A1A7900D73C07 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		264CCBA42646318200DA11F5 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		264CCBA92646347600DA11F5 /* TasksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksCell.swift; sourceTree = "<group>"; };
 		3F88E56570C21458FF1DF083 /* Pods-SimplePlanner-SimplePlannerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplePlanner-SimplePlannerUITests.debug.xcconfig"; path = "Target Support Files/Pods-SimplePlanner-SimplePlannerUITests/Pods-SimplePlanner-SimplePlannerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4E7E8E2E31105007445ACF15 /* Pods_SimplePlannerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimplePlannerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80D0510D7AC0AB7D6F2E75BD /* Pods-SimplePlannerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplePlannerTests.release.xcconfig"; path = "Target Support Files/Pods-SimplePlannerTests/Pods-SimplePlannerTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -121,11 +125,13 @@
 				261AE61C263A0F1A00D73C07 /* AppDelegate.swift */,
 				261AE61E263A0F1A00D73C07 /* SceneDelegate.swift */,
 				261AE622263A0F1A00D73C07 /* Main.storyboard */,
+				264CCBA92646347600DA11F5 /* TasksCell.swift */,
 				261AE625263A0F1E00D73C07 /* Assets.xcassets */,
 				261AE627263A0F1E00D73C07 /* LaunchScreen.storyboard */,
 				261AE62A263A0F1E00D73C07 /* Info.plist */,
 				261AE660263A1A6A00D73C07 /* LoginViewController.swift */,
 				261AE665263A1A7900D73C07 /* FeedViewController.swift */,
+				264CCBA42646318200DA11F5 /* TasksViewController.swift */,
 			);
 			path = SimplePlanner;
 			sourceTree = "<group>";
@@ -411,6 +417,8 @@
 			files = (
 				261AE661263A1A6A00D73C07 /* LoginViewController.swift in Sources */,
 				261AE61D263A0F1A00D73C07 /* AppDelegate.swift in Sources */,
+				264CCBAA2646347600DA11F5 /* TasksCell.swift in Sources */,
+				264CCBA52646318200DA11F5 /* TasksViewController.swift in Sources */,
 				261AE666263A1A7900D73C07 /* FeedViewController.swift in Sources */,
 				261AE61F263A0F1A00D73C07 /* SceneDelegate.swift in Sources */,
 			);
