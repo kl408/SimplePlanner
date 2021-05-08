@@ -137,4 +137,8 @@ Optional:
 Log in and Sign Up Gif
 
 ![](https://i.imgur.com/UQjGM62.gif)
+
+Create, View, and Delete Tasks
+Logout
+
 ![](https://i.imgur.com/Xgtl8TH.gif)
