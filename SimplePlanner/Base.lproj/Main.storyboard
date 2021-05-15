@@ -67,12 +67,12 @@
                     <connections>
                         <outlet property="passwordField" destination="00B-bj-ZiX" id="ER3-KO-GJh"/>
                         <outlet property="usernameField" destination="ZQj-7Y-C0U" id="bgP-kC-kbO"/>
-                        <segue destination="fGO-pn-epI" kind="presentation" identifier="loginSegue" modalPresentationStyle="fullScreen" id="hiY-id-YuQ"/>
+                        <segue destination="gnh-Yb-Rwg" kind="presentation" identifier="loginSegue" modalPresentationStyle="fullScreen" id="y7g-Uc-mXl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="103.79464285714285"/>
+            <point key="canvasLocation" x="129" y="-646"/>
         </scene>
         <!--Feed View Controller-->
         <scene sceneID="bnR-jn-sUP">
@@ -147,7 +147,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BVy-Wj-QJw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1773.913043478261" y="103.79464285714285"/>
+            <point key="canvasLocation" x="-397" y="1473"/>
         </scene>
         <!--Tasks View Controller-->
         <scene sceneID="aG8-i8-nUX">
@@ -192,12 +192,80 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="119-8t-Rgl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3543.4782608695655" y="103.79464285714285"/>
+            <point key="canvasLocation" x="-397" y="2849"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="IFN-xX-fIh">
+            <objects>
+                <tabBarController storyboardIdentifier="tabBar" id="gnh-Yb-Rwg" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iG0-as-Nay">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="fGO-pn-epI" kind="relationship" relationship="viewControllers" id="iHw-pF-BCe"/>
+                        <segue destination="87k-Jh-yzP" kind="relationship" relationship="viewControllers" id="eh7-HZ-S1J"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QJk-PF-VwI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129" y="68"/>
+        </scene>
+        <!--Weather-->
+        <scene sceneID="73q-H9-qmY">
+            <objects>
+                <viewController id="c5C-55-Wei" customClass="WeatherViewController" customModule="SimplePlanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t8Q-YF-QS7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New York, NY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8l4-SB-Jeg">
+                                <rect key="frame" x="128" y="88" width="158" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="75°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aS5-O9-AcO">
+                                <rect key="frame" x="146" y="404" width="122.5" height="88.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="74"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunny" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h27-hO-ypq">
+                                <rect key="frame" x="183" y="781" width="48" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0NI-fW-gAX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8l4-SB-Jeg" firstAttribute="centerX" secondItem="t8Q-YF-QS7" secondAttribute="centerX" id="4zu-yd-uHU"/>
+                            <constraint firstItem="h27-hO-ypq" firstAttribute="centerX" secondItem="t8Q-YF-QS7" secondAttribute="centerX" id="BLa-mp-LfX"/>
+                            <constraint firstItem="8l4-SB-Jeg" firstAttribute="top" secondItem="0NI-fW-gAX" secondAttribute="top" id="FZv-7t-TKh"/>
+                            <constraint firstItem="aS5-O9-AcO" firstAttribute="centerY" secondItem="t8Q-YF-QS7" secondAttribute="centerY" id="N20-ow-MRS"/>
+                            <constraint firstItem="aS5-O9-AcO" firstAttribute="centerX" secondItem="t8Q-YF-QS7" secondAttribute="centerX" id="dCA-aF-maC"/>
+                            <constraint firstItem="0NI-fW-gAX" firstAttribute="bottom" secondItem="h27-hO-ypq" secondAttribute="bottom" constant="11" id="iPw-cc-lxO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Weather" id="7w3-Wt-ZR7"/>
+                    <connections>
+                        <outlet property="locationLabel" destination="8l4-SB-Jeg" id="1OX-IQ-5mU"/>
+                        <outlet property="tempatureLabel" destination="aS5-O9-AcO" id="Lrx-6u-fOY"/>
+                        <outlet property="weatherLabel" destination="h27-hO-ypq" id="YRs-wI-HkP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nsa-RY-vbv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="664" y="1473"/>
+        </scene>
+        <!--Tasks-->
         <scene sceneID="VKm-lT-r5i">
             <objects>
                 <navigationController storyboardIdentifier="FeedNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="fGO-pn-epI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Tasks" id="KSF-Rn-ban"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fdj-WE-mc1">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -210,7 +278,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HrS-pH-ewT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="943" y="104"/>
+            <point key="canvasLocation" x="-397" y="795"/>
         </scene>
         <!--AddTask Navigation controller-->
         <scene sceneID="sbF-xp-J81">
@@ -228,7 +296,26 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8zC-im-KoH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2631.8840579710145" y="103.79464285714285"/>
+            <point key="canvasLocation" x="-397" y="2160"/>
+        </scene>
+        <!--Weather-->
+        <scene sceneID="zKQ-Xk-yTC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="87k-Jh-yzP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Weather" id="Pep-WB-C2r"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="m7z-aL-Asy">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="c5C-55-Wei" kind="relationship" relationship="rootViewController" id="LDq-4b-gQO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qx9-V3-TUL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="664" y="795"/>
         </scene>
     </scenes>
     <resources>

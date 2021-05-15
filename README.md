@@ -31,7 +31,7 @@ Simple Planner is a planner app that manages your to tasks. It is paired with a 
 
 - [x] User logs in to access their planner.
 - [x] User creates tasks.
-- [ ] User can view weather.
+- [x] User can view weather.
 - [x] User can view tasks.
 - [ ] User can use a pomodoro.
 - [ ] User can change settings.
@@ -138,7 +138,10 @@ Log in and Sign Up Gif
 
 ![](https://i.imgur.com/UQjGM62.gif)
 
-Create, View, and Delete Tasks
-Logout
+Create, View,  Delete Tasks, andLogout
 
 ![](https://i.imgur.com/Xgtl8TH.gif)
+
+Weather function added
+![](https://i.imgur.com/zP6QPRD.gif)
+

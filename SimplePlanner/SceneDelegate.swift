@@ -21,9 +21,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         if PFUser.current() != nil {
             let main = UIStoryboard(name: "Main", bundle: nil)
-            let feedNavigationController = main.instantiateViewController(identifier: "FeedNavigationController")
+            let tabBar = main.instantiateViewController(identifier: "tabBar")
             
-            window?.rootViewController = feedNavigationController
+            window?.rootViewController = tabBar
         }
     }
 
