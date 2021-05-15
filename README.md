@@ -143,5 +143,6 @@ Create, View,  Delete Tasks, andLogout
 ![](https://i.imgur.com/Xgtl8TH.gif)
 
 Weather function added
+
 ![](https://i.imgur.com/zP6QPRD.gif)
 
