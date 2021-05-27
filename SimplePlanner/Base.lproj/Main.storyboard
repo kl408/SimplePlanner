@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -60,6 +60,10 @@
                                     <action selector="onSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eBv-dG-hMr"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SimplePlanner_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="cy8-Cj-AjX">
+                                <rect key="frame" x="84" y="149" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -88,7 +92,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TasksCell" rowHeight="138" id="mex-B8-OvO" customClass="TasksCell" customModule="SimplePlanner" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="424" height="138"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="424" height="138"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mex-B8-OvO" id="NVs-8a-iIw">
                                             <rect key="frame" x="0.0" y="0.0" width="424" height="138"/>
@@ -265,7 +269,7 @@
         <scene sceneID="VKm-lT-r5i">
             <objects>
                 <navigationController storyboardIdentifier="FeedNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="fGO-pn-epI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Tasks" id="KSF-Rn-ban"/>
+                    <tabBarItem key="tabBarItem" title="Tasks" image="pencil" catalog="system" id="KSF-Rn-ban"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fdj-WE-mc1">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -302,7 +306,7 @@
         <scene sceneID="zKQ-Xk-yTC">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="87k-Jh-yzP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Weather" id="Pep-WB-C2r"/>
+                    <tabBarItem key="tabBarItem" title="Weather" image="sun.min.fill" catalog="system" id="Pep-WB-C2r"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="m7z-aL-Asy">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -319,6 +323,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="SimplePlanner_Logo" width="532" height="235"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="sun.min.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
