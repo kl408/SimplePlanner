@@ -153,4 +153,5 @@ Weather function added
 https://user-images.githubusercontent.com/56702688/119754375-667bc700-be6e-11eb-8d3f-fe769a11e48b.mp4
 
 [![Simple Planner](https://img.youtube.com/vi/hE0GkAMPev8/0.jpg)](https://youtu.be/hE0GkAMPev8)
+
 Click on the above image for youtube video!
