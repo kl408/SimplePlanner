@@ -34,8 +34,6 @@ Simple Planner is a planner app that manages your to tasks. It is paired with a 
 - [x] User creates tasks.
 - [x] User can view weather.
 - [x] User can view tasks.
-- [ ] User can use a pomodoro.
-- [ ] User can change settings.
 
 **Optional Nice-to-have Stories**
 
