@@ -35,6 +35,7 @@ Simple Planner is a planner app that manages your to tasks. It is paired with a 
 - [x] User can view weather.
 - [x] User can view tasks.
 
+
 **Optional Nice-to-have Stories**
 
 - [ ] User can color code their to-dos based on importance.
