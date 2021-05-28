@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26056300264F27580074772A /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260562FF264F27580074772A /* WeatherViewController.swift */; };
 		261AE61D263A0F1A00D73C07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261AE61C263A0F1A00D73C07 /* AppDelegate.swift */; };
 		261AE61F263A0F1A00D73C07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261AE61E263A0F1A00D73C07 /* SceneDelegate.swift */; };
 		261AE624263A0F1A00D73C07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261AE622263A0F1A00D73C07 /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 		1145C62AABF82BADE4FE668D /* Pods_SimplePlanner_SimplePlannerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimplePlanner_SimplePlannerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5AE37CBACE15BFE27C9F17 /* Pods-SimplePlanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplePlanner.release.xcconfig"; path = "Target Support Files/Pods-SimplePlanner/Pods-SimplePlanner.release.xcconfig"; sourceTree = "<group>"; };
 		1FDF7C3FC84FB3730C20B8C2 /* Pods-SimplePlannerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplePlannerTests.debug.xcconfig"; path = "Target Support Files/Pods-SimplePlannerTests/Pods-SimplePlannerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		260562FF264F27580074772A /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		261AE619263A0F1A00D73C07 /* SimplePlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimplePlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		261AE61C263A0F1A00D73C07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		261AE61E263A0F1A00D73C07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				261AE660263A1A6A00D73C07 /* LoginViewController.swift */,
 				261AE665263A1A7900D73C07 /* FeedViewController.swift */,
 				264CCBA42646318200DA11F5 /* TasksViewController.swift */,
+				260562FF264F27580074772A /* WeatherViewController.swift */,
 			);
 			path = SimplePlanner;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				261AE61D263A0F1A00D73C07 /* AppDelegate.swift in Sources */,
 				264CCBAA2646347600DA11F5 /* TasksCell.swift in Sources */,
 				264CCBA52646318200DA11F5 /* TasksViewController.swift in Sources */,
+				26056300264F27580074772A /* WeatherViewController.swift in Sources */,
 				261AE666263A1A7900D73C07 /* FeedViewController.swift in Sources */,
 				261AE61F263A0F1A00D73C07 /* SceneDelegate.swift in Sources */,
 			);

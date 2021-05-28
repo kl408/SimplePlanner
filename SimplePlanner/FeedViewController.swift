@@ -26,7 +26,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidAppear(animated)
         
         let query = PFQuery(className:"Tasks")
-        //query.whereKey("owner", equalTo: PFUser.current()!)
+        //filters tasks so users can only see their own tasks
+        query.whereKey("owner", equalTo: PFUser.current()!)
         query.includeKey("owner")
         query.findObjectsInBackground { (tasks, error) in
             if tasks != nil{
@@ -38,6 +39,27 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tasks.count;
+    }
+    
+    //delete tasks
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete{
+            let task = tasks[indexPath.row]
+            let objectId = task.value(forKeyPath: "objectId") as! String
+            print(objectId)
+            
+            let query = PFQuery(className:"Tasks")
+            
+            query.getObjectInBackground(withId: objectId) { (object, error) -> Void in
+                if object != nil && error == nil{
+                    //Delete the object from Parse
+                    object!.deleteInBackground()
+                }
+              }
+            
+            self.tasks.remove(at: indexPath.row)
+            self.tableView.deleteRows(at: [indexPath], with: .fade)
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
